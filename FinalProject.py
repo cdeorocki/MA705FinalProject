@@ -15,7 +15,7 @@ server = app.server
 stylesheet = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
 # Importing data and removing unneeded columns
-df = pd.read_csv('billionaires1996to2014min.csv', index_col=1)
+df = pd.read_csv('billionaires1996to2014.csv', index_col=1)
 df = df.drop(['Citizenship', 'Age', 'Sourceofwealth', 'IndustryAggregates', 'North', 'Region', 'Industry', 'Company', 'Deflator1996','Realnetworth', 'Realbillionaires', ' Gdpcurrentus ', 'Countrycode'], axis=1)
 df.reset_index(inplace=True)
 

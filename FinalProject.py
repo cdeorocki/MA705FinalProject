@@ -10,6 +10,7 @@ import datetime
 from dash import Dash, dash_table
 
 app = Dash(__name__)
+server = app.server
 
 stylesheet = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 

@@ -1,1 +1,1 @@
-web: gunicorn boston universities:server
+web: gunicorn FinalProject:server

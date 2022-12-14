@@ -167,6 +167,7 @@ great-expectations==0.14.11
 greenlet==1.1.2
 guidata==2.2.1
 guiqwt==4.3.0
+gunicorn==20.1.0
 h11==0.12.0
 h2==4.1.0
 h5py==3.7.0

@@ -16,7 +16,7 @@ stylesheet = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
 '''
 # Importing data and removing unneeded columns
-df = pd.read_csv('billionaires1996to2014.csv', index_col=1)
+df = pd.read_csv('billionaires1996to2014min.csv', index_col=1)
 df = df.drop(['Citizenship', 'Age', 'Sourceofwealth', 'IndustryAggregates', 'North', 'Region', 'Industry', 'Company', 'Deflator1996','Realnetworth', 'Realbillionaires', ' Gdpcurrentus ', 'Countrycode'], axis=1)
 df.reset_index(inplace=True)
 
@@ -54,7 +54,7 @@ df['Count'] = int(1)
 df.to_csv('X2.csv', index=False)
 '''
 
-df = pd.read_csv('X2.csv', index_col=1)
+# df = pd.read_csv('X2.csv', index_col=1)
 
 years = [2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014]
 
